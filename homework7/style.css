@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #30383a;
+}
+
+.main-title {
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  color: white;
+}
+
+.wrapper {
+  /* background-color: orangered; */
+}
+
+.slider-container {
+  width: 256px;
+  /* border-radius: 10px; */
+  /* border: 2px solid green; */
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 2740px;
+  position: relative;
+  left: 0;
+  transition: all ease 0.8s;
+}
+
+.usercard {
+  width: 252px;
+  margin-right: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.usercard:last-child {
+  margin-right: 0;
+}
+
+.usercard__title {
+  border-bottom: 2px solid white;
+  text-align: center;
+  background-color: orangered;
+  border-radius: 10px 10px 0 0;
+}
+
+.usercard-item__title {
+  font-family: "Architects Daughter", cursive;
+  color: white;
+}
+
+.usercard__info {
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.usercard-item__text {
+  margin-bottom: 10px;
+}
+
+.usercard-item__text:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  height: 35px;
+  width: 100px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-family: "Architects Daughter", cursive;
+  color: white;
+  margin-top: 25px;
+  margin-right: 54px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: orangered;
+}
+
+.button:active {
+}
