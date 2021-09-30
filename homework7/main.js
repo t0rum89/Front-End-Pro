@@ -20,12 +20,12 @@ const createContent = (result) => {
   const buttonPrev = document.createElement("button");
   buttonPrev.innerText = "Prev";
   buttonPrev.classList.add("button", "button-prev");
-  body.appendChild(buttonPrev);
+  wrapper.appendChild(buttonPrev);
 
   const buttonNext = document.createElement("button");
   buttonNext.innerText = "Next";
   buttonNext.classList.add("button", "button-next");
-  body.appendChild(buttonNext);
+  wrapper.appendChild(buttonNext);
 
   let offset = 0;
 
