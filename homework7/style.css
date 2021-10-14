@@ -21,8 +21,7 @@ body {
 
 .slider-container {
   width: 256px;
-  /* border-radius: 10px; */
-  /* border: 2px solid green; */
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -31,7 +30,7 @@ body {
   width: 2740px;
   position: relative;
   left: 0;
-  transition: all ease 0.8s;
+  transition: all ease 0.5s;
 }
 
 .usercard {
@@ -68,6 +67,12 @@ body {
 
 .usercard-item__text:last-child {
   margin-bottom: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .button {

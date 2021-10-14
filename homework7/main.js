@@ -17,32 +17,34 @@ const createContent = (result) => {
   sliderTrack.classList.add("slider-track");
   sliderContainer.appendChild(sliderTrack);
 
+  const navigation = document.createElement("div");
+  navigation.classList.add("navigation");
+  body.appendChild(navigation);
   const buttonPrev = document.createElement("button");
   buttonPrev.innerText = "Prev";
   buttonPrev.classList.add("button", "button-prev");
-  wrapper.appendChild(buttonPrev);
+  navigation.appendChild(buttonPrev);
 
   const buttonNext = document.createElement("button");
   buttonNext.innerText = "Next";
   buttonNext.classList.add("button", "button-next");
-  wrapper.appendChild(buttonNext);
+  navigation.appendChild(buttonNext);
 
-  let offset = 0;
+  let activeIndex = 0;
+  const cardWidth = 266;
+  const cardsAmount = 10;
 
+  const onSliderUpdate = () => {
+    sliderTrack.style.transform = `translateX(-${activeIndex * cardWidth}px)`;
+  };
   document.querySelector(".button-prev").addEventListener("click", () => {
-    offset -= 266;
-    if (offset < 0) {
-      offset = 2394;
-    }
-    sliderTrack.style.left = -offset + "px";
+    activeIndex = activeIndex > 0 ? activeIndex - 1 : cardsAmount - 1;
+    onSliderUpdate();
   });
 
   document.querySelector(".button-next").addEventListener("click", () => {
-    offset += 266;
-    if (offset > 2394) {
-      offset = 0;
-    }
-    sliderTrack.style.left = -offset + "px";
+    activeIndex = activeIndex < cardsAmount - 1 ? activeIndex + 1 : 0;
+    onSliderUpdate();
   });
 
   result.forEach((element) => {
