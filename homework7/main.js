@@ -4,7 +4,7 @@ const createContent = (result) => {
   const body = document.querySelector("body");
 
   const mainTitle = document.createElement("h1");
-  mainTitle.innerText = "USERS";
+  mainTitle.innerText = "USER'S CARDS";
   mainTitle.classList.add("main-title");
   body.appendChild(mainTitle);
   const wrapper = document.createElement("div");

@@ -11,6 +11,8 @@ body {
   font-family: "Architects Daughter", cursive;
   text-align: center;
   color: white;
+
+  margin-top: 50px;
 }
 
 .wrapper {
@@ -71,8 +73,7 @@ body {
 
 .navigation {
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .button {
@@ -87,10 +88,11 @@ body {
   margin-right: 54px;
 }
 
+.button:last-child {
+  margin-right: 0;
+}
+
 .button:hover {
   cursor: pointer;
   background: orangered;
-}
-
-.button:active {
 }
