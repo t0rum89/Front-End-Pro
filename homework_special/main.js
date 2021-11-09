@@ -9,7 +9,7 @@ HIT.src = "sound/hit.wav";
 const CATCH = new Audio();
 CATCH.src = "sound/catch.wav";
 
-// LOOP.play();
+LOOP.play();
 
 //размер квадратика
 const SIZE = 10;
