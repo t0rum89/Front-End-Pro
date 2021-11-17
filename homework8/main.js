@@ -14,9 +14,9 @@ LOOP.play();
 //размер квадратика
 const SIZE = 10;
 //ширина поля
-const ROW_COUNT = 40;
+const ROW_COUNT = 80;
 //высота поля
-const COLUMN_COUNT = 20;
+const COLUMN_COUNT = 40;
 // стандартная скорость падения
 let speed = 130;
 console.log(`speed: ${speed}`);
